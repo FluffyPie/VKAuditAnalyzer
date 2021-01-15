@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html style="font-size: 16px;">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="page_type" content="np-template-header-footer-from-plugin">
+    <title>Do you like what you see?</title>
+    <link rel="stylesheet" href="~/mainstyle.css" media="screen">
+    <link rel="stylesheet" href="~/result.css" media="screen">
+    <script class="u-script" type="text/javascript" src="~/jquery.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="~/mainscript.js" defer=""></script>
+    <script class="u-script" type="text/javascript" src="~/result.js" defer=""></script>
+    <script src="~/Chart.min.js"></script>
+    <link id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Open Sans' rel='stylesheet' type='text/css'>
+    <link id='GoogleFontsLink' href='https://fonts.googleapis.com/css?family=Playfair Display' rel='stylesheet' type='text/css'>
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+</head>
+
+<body class="u-body">
+    <script >
+        alert("Программа находиться в бета тестировании. Максимальное число подписчиков ограничено до 250. Если в паблике число подписчиков больше, то обработаются только первые 250");
+    </script>
+    <input type="hidden" value="@ViewData["Topic1"]" id="Topic1" />
+    <input type="hidden" value="@ViewData["Topic2"]" id="Topic2" />
+    <input type="hidden" value="@ViewData["Topic3"]" id="Topic3" />
+    <input type="hidden" value="@ViewData["Topic4"]" id="Topic4" />
+    <input type="hidden" value="@ViewData["Topic5"]" id="Topic5" />
+    <input type="hidden" value="@ViewData["Topic6"]" id="Topic6" />
+    <input type="hidden" value="@ViewData["Topic7"]" id="Topic7" />
+    <input type="hidden" value="@ViewData["Topic8"]" id="Topic8" />
+    <input type="hidden" value="@ViewData["Topic9"]" id="Topic9" />
+    <input type="hidden" value="@ViewData["Topic10"]" id="Topic10" />
+
+    <input type="hidden" value="@ViewData["Dataset1"]" id="Dataset1" />
+    <input type="hidden" value="@ViewData["Dataset2"]" id="Dataset2" />
+    <input type="hidden" value="@ViewData["Dataset3"]" id="Dataset3" />
+    <input type="hidden" value="@ViewData["Dataset4"]" id="Dataset4" />
+    <input type="hidden" value="@ViewData["Dataset5"]" id="Dataset5" />
+    <input type="hidden" value="@ViewData["Dataset6"]" id="Dataset6" />
+    <input type="hidden" value="@ViewData["Dataset7"]" id="Dataset7" />
+    <input type="hidden" value="@ViewData["Dataset8"]" id="Dataset8" />
+    <input type="hidden" value="@ViewData["Dataset9"]" id="Dataset9" />
+    <input type="hidden" value="@ViewData["Dataset10"]" id="Dataset10" />
+
+    <header class="navbar u-align-left u-black u-clearfix u-header u-header" id="sec-a5ef">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+            <p class="logo u-text u-text-default u-text-1" data-animation-name="fadeIn" data-animation-duration="1000" data-animation-delay="0">
+                <a class="navbar u-active-none u-border-none u-btn u-button-link u-button-style u-hover-none u-none u-text-body-alt-color u-btn-1" href="/Home/Index" data-page-id="1006227259">VK Audit Analyser</a>
+            </p>
+        </div>
+    </header>
+    <section class="skrollable u-align-left u-clearfix u-image u-parallax u-shading u-section-1" src="" data-image-width="150" data-image-height="99" id="sec-69ed">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title u-text-1">График самых популярных тем</h1>
+            <p class="u-large-text u-text u-text-default u-text-variant u-text-2">Видите? Все и правда очень просто ;)</p>
+            <div class="u-clearfix u-custom-html u-custom-html-1">
+                <canvas id="chart-01" width="800" height="500" style="background-color:rgba(255,255,255,0.37);border-radius:0px;width:800px;height:500px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+            </div>
+        </div>
+    </section>
+    <section class="skrollable u-align-center u-clearfix u-image u-parallax u-shading u-section-2" src="" data-image-width="1280" data-image-height="848" id="sec-d6bb">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title u-text-1">Круговая диаграмма интересов</h1>
+            <div class="u-clearfix u-custom-html u-custom-html-1">
+                <canvas id="chart-02" width="800" height="500" style="background-color:rgba(255,255,255,0.37);border-radius:0px;width:800px;height:500px;padding-left:0px;padding-right:0px;padding-top:0px;padding-bottom:0px"></canvas>
+            </div>
+        </div>
+    </section>
+    <section class="skrollable u-align-left u-clearfix u-image u-parallax u-shading u-section-3" src="" id="sec-f6a6" data-image-width="1280" data-image-height="854">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <h1 class="u-text u-text-default u-title u-text-1">Быть может, вам пригодятся эти данные в будущем. Не хотите ли сохранить их в файл?</h1>
+            <a href="/Home/GetFile?message=@ViewData["Message"]" class="u-black u-border-2 u-border-grey-75 u-btn u-button-style u-hover-white u-btn-1">Черт возьми, да!</a>
+        </div>
+    </section>
+    <footer class="u-align-center u-black u-clearfix u-footer u-footer" id="sec-e766">
+        <div class="u-clearfix u-sheet u-sheet-1">
+            <p class="u-small-text u-text u-text-variant u-text-1">VKAuditAnalyser© 2020</p>
+        </div>
+    </footer>
+
+</body>
+</html>

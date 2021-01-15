@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <UserSecretsId>24ec78d2-5c2c-4d27-9676-2845bb3faa66</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ExcelWorker\ExcelWorker.csproj" />
+    <ProjectReference Include="..\VKAPIWorker\VKAPIWorker.csproj" />
+  </ItemGroup>
+
+</Project>

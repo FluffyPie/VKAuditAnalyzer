@@ -1,0 +1,25 @@
+﻿
+@{
+    ViewData["Title"] = "Test";
+}
+
+<div>
+    <h3>Форма оформления покупки</h3>
+    <p>Для оформления покупки заполните следующие поля:</p>
+    <form method="post">
+        <input type="hidden" value="@ViewBag.PhoneId" name="PhoneId" />
+        <div class="u-form-group u-form-name">
+            <label for="name-6797" class="u-form-control-hidden u-label">Name</label>
+            <input type="text" name="UserName" placeholder="Введите ваше имя" id="name-6797" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+        </div>
+        <div class="u-form-group u-form-message">
+            <label for="message-6797" class="u-form-control-hidden u-label">Address</label>
+            <textarea placeholder="Ваш отзыв" name="TextReview" rows="4" cols="50" id="message-6797" class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required=""></textarea>
+        </div>
+        <div class="u-align-center u-form-group u-form-submit">
+            <a href="/Home/Index" class="u-border-4 u-border-white u-btn u-btn-submit u-button-style u-hover-black u-none u-text-body-alt-color u-text-hover-white u-btn-1">Отправить</a>
+            <input type="submit" >
+        </div>
+    </form>
+</div>
+
